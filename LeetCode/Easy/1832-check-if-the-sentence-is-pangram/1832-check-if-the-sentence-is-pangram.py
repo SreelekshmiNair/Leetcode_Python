@@ -8,7 +8,9 @@ class Solution(object):
         for al in sentence:
             if al.isalpha():
                 alphabet_set.add(al.lower())
-        return len(alphabet_set)==26
+                if len(alphabet_set)==26:
+                    return True
+        return False   
       
 
     
